@@ -1,0 +1,90 @@
+body {
+  background-color: var(--light-color);
+}
+
+.lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.course-heading {
+  padding: 2rem 0;
+  text-align: center;
+  color: #5670e4;
+}
+
+.course {
+  background-color: #fff;
+  padding: 3px;
+  max-width: 300px;
+}
+
+.course img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.course p {
+  text-align: center;
+}
+
+.btn-info {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Mobile devices*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .lists {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .course-heading {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* ipad, Tablets*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .lists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-heading {
+    font-size: 1.8rem;
+  }
+}
+
+/*Small screens, laptops*/
+@media (min-width: 769) and (max-width: 1024px) {
+  .lists {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .lists {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .lists {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
