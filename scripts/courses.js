@@ -15,8 +15,10 @@ function createList(courseLists) {
         <div class="course">
           <img id="${course.id}" src="/content/img/${course.imageName}" alt="${course.title} " />
           <p>${course.title} ${course.length}hr</p>
+          <div><button class="btn btn primary">Add To Cart</button></div>
         </div>
-      </a>`
+      </a>          
+      `
     );
   });
 }
